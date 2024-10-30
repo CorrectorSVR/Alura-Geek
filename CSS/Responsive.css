@@ -1,0 +1,154 @@
+/* Pantallas medianas (tablets y móviles grandes) */
+@media (max-width: 768px) {
+    .container {
+      padding: 0 10px; /* Reducimos el padding general */
+    }
+  
+    header .logo h1 {
+      font-size: 20px; /* Ajustamos el tamaño del logo */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Menú en columna */
+      align-items: center;
+    }
+  
+    .product-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste en el grid de productos */
+      gap: 10px;
+    }
+  
+    .product h3 {
+      font-size: 16px;
+    }
+  
+    .product p {
+      font-size: 14px;
+    }
+  
+    footer p, .footer-links a {
+      font-size: 12px;
+    }
+  
+    /* Ajustes para el formulario de agregar productos */
+    .cart-placeholder {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  
+    .cart-placeholder h2 {
+      font-size: 18px;
+    }
+  
+    .cart-placeholder input[type="text"],
+    .cart-placeholder input[type="number"] {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .submit-btn, .reset-btn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 500px) {
+    header .logo h1 {
+      font-size: 18px;
+    }
+  
+    nav ul {
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+    .product-container {
+      grid-template-columns: 1fr; /* Una sola columna para más espacio en pantalla pequeña */
+    }
+  
+    .product {
+      padding: 8px;
+    }
+  
+    .product h3 {
+      font-size: 14px;
+    }
+  
+    .product p {
+      font-size: 12px;
+    }
+  
+    .product button {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    /* Ajustes para el formulario de agregar productos */
+    .cart-placeholder {
+      max-width: 220px;
+      padding: 10px;
+    }
+  
+    .cart-placeholder h2 {
+      font-size: 16px;
+    }
+  
+    .cart-placeholder input[type="text"],
+    .cart-placeholder input[type="number"] {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .submit-btn, .reset-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
+  /* Orientación horizontal en móviles */
+  @media (max-width: 768px) and (orientation: landscape) {
+    header {
+      padding: 5px 0;
+    }
+  
+    .container {
+      padding: 5px; /* Ajuste de padding */
+    }
+  
+    .product-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en horizontal para mejor distribución */
+    }
+  
+    nav ul {
+      flex-direction: row;
+      gap: 10px;
+    }
+  
+    footer {
+      padding: 10px 0;
+    }
+  
+    /* Ajustes para el formulario de agregar productos */
+    .cart-placeholder {
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 8px;
+    }
+  
+    .cart-placeholder h2 {
+      font-size: 15px;
+    }
+  
+    .cart-placeholder input[type="text"],
+    .cart-placeholder input[type="number"] {
+      font-size: 12px;
+      padding: 4px;
+    }
+  
+    .submit-btn, .reset-btn {
+      font-size: 12px;
+      padding: 5px 8px;
+    }
+  }
+  

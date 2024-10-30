@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro & Anime Store</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/Responsive.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>Retro Games & Anime Dvd Store</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#games">Videojuegos</a></li>
+        <li><a href="#anime">Anime</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="#profile">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de productos -->
+  <main>
+    <section id="games" class="product-section">
+      <h2>Videojuegos Retro</h2>
+      <div id="games-container" class="product-container">
+        <!-- Los productos de videojuegos se insertarán aquí mediante JavaScript -->
+      </div>
+    </section>
+
+    <section id="anime" class="product-section">
+      <h2>Anime en Blu-ray</h2>
+      <div id="anime-container" class="product-container">
+        <!-- Los productos de anime se insertarán aquí mediante JavaScript -->
+      </div>
+    </section>
+    
+    <!-- Contenedor adicional para productos generales (opcional) -->
+    <section id="general-products" class="product-section">
+      <h2>Productos Generales</h2>
+      <div id="product-list" class="product-container">
+        <!-- Los productos generales se insertarán aquí -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Formulario para agregar productos al carrito -->
+  <section id="add-to-cart" class="cart-placeholder">
+    <h2>Agregar Producto:</h2>
+    <form id="cart-form">
+      <label for="product-name">Nombre:</label>
+      <input type="text" id="product-name" placeholder="Nombre del producto..." required>
+      <label for="product-price">Precio:</label>
+      <input type="number" id="product-price" placeholder="Precio..." required>
+      <label for="product-image">Imagen (URL):</label>
+      <input type="text" id="product-image" placeholder="URL de la imagen..." required>
+      <div class="form-buttons">
+        <button type="submit" class="submit-btn">Enviar</button>
+        <button type="reset" class="reset-btn">Limpiar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Retro Games & Anime Dvd Store. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#privacy">Política de privacidad</a> |
+      <a href="#terms">Términos de servicio</a>
+    </div>
+  </footer>
+
+  <!-- Archivos JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
+
+
