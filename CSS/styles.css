@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 80px;
   }
   
   a {
@@ -36,11 +37,34 @@
     background-color: #444;
     color: #fff;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que ocupe el ancho completo de la ventana */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   header .logo h1 {
     font-size: 24px;
     text-align: center;
+  }
+
+  .icon {
+    height: 100px;
+    width: auto;
+    text-align: center;
+  }
+
+  .mando {
+    height: 70px;
+    width: auto;
+
+  }
+
+  .disc {
+    height: 60px;
+    width: auto;
   }
   
   nav ul {
@@ -80,16 +104,26 @@
   
   .product {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 18px solid #4c12d3;
     border-radius: 8px;
     padding: 10px;
     transition: box-shadow 0.3s;
+  }
+
+  .product:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
   }
   
   .product img {
     width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
+    transition: transform 0.3s;
+  }
+
+  .product:hover img {
+    transform: scale(1.05);
   }
   
   .product h3 {
@@ -115,9 +149,104 @@
   .product button:hover {
     background-color: #0056b3;
   }
-
-
   
+  .product button.delete-btn {
+    background-color: #ff4d4d; /* Color rojo para resaltar que es de eliminación */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .product button.delete-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .product button.delete-btn img {
+    width: 16px; /* Tamaño del icono */
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .product-filtered {
+    width: 200px; /* Ajusta según el tamaño que prefieras */
+    padding: 10px;
+    margin: 10px;
+    font-size: 0.9em; /* Ajusta el tamaño del texto */
+    transition: all 0.3s ease;
+  }
+  
+  .product-filtered img {
+    max-width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto;
+  }
+  
+  
+  /* Estilos específicos para el nuevo placeholder ancho */
+.cart-placeholder--wide {
+  width: 100%; /* Hazlo tan ancho como el contenedor */
+  max-width: 800px; /* Ajusta el ancho máximo deseado */
+  margin: 0 auto 50px auto; /* Centro en la página con margen inferior más amplio */
+  padding: 20px; /* Espacio interno para dar separación */
+  background-color: #f9f9f9; /* Fondo claro para distinguir */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+/* Ajustes de estilos para el formulario */
+.cart-placeholder--wide h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-placeholder--wide #cart-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre campos */
+}
+
+.cart-placeholder--wide label {
+  font-weight: bold;
+}
+
+.cart-placeholder--wide input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cart-placeholder--wide .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart-placeholder--wide .submit-btn,
+.cart-placeholder--wide .reset-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.cart-placeholder--wide .submit-btn {
+  background-color: #4caf50;
+}
+
+.cart-placeholder--wide .reset-btn {
+  background-color: #f44336;
+}
+
   
   /* Footer */
   footer {
@@ -133,12 +262,13 @@
   
   footer p {
     margin-bottom: 8px;
+    font-size: 22px;
   }
   
   .footer-links a {
     color: #fff;
     margin: 0 5px;
-    font-size: 14px;
+    font-size: 18px;
   }
   
   .footer-links a:hover {

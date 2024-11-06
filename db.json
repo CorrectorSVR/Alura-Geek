@@ -1,0 +1,66 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "name": "Panzer Dragoon Saga",
+      "price": 79.99,
+      "image": "https://static.wikia.nocookie.net/panzerdragoon/images/d/d8/Panzer-dragoon-saga-pal-version-box-front.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Project Zero II",
+      "price": 34.99,
+      "image": "https://static.wikia.nocookie.net/fatalframe/images/e/ec/Project_Zero_2wiiedit.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Link Between Worlds",
+      "price": 29.99,
+      "image": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/46/A_Link_Between_Worlds_cover.jpg"
+    },
+    {
+      "id": "ee41",
+      "name": "Drakengard 3",
+      "price": 49,
+      "image": "https://static.wikia.nocookie.net/drakengard/images/7/70/Drakengard_3_-_US_Standard_Box_Art2.png"
+    },
+    {
+      "id": "de50",
+      "name": "Koudelka",
+      "price": 26,
+      "image": "https://static.wikia.nocookie.net/shadowhearts/images/7/79/Koudelkantscfrontti6.jpg"
+    }
+  ],
+  "anime": [
+    {
+      "id": "4",
+      "name": "Boogiepop",
+      "price": 26.55,
+      "image": "https://static.wikia.nocookie.net/boogiepop/images/e/e7/BoogiepopWaWarawanai2019.jpg"
+    },
+    {
+      "id": "f7be",
+      "name": "Cowboy Bebop",
+      "price": 19,
+      "image": "https://static.wikia.nocookie.net/dubbing9585/images/7/75/CowBe.jpg"
+    },
+    {
+      "id": "4e0f",
+      "name": "Lain",
+      "price": 29,
+      "image": "https://static.wikia.nocookie.net/sel/images/8/80/DVD-Lain_Cover.jpg"
+    },
+    {
+      "id": "f42e",
+      "name": "Fate Zero",
+      "price": 32,
+      "image": "https://static.wikia.nocookie.net/fateuniverse/images/7/73/Fate_zero_poster.jpg"
+    },
+    {
+      "id": "bfeb",
+      "name": "Last Exile",
+      "price": 35,
+      "image": "https://static.wikia.nocookie.net/lastexile/images/9/91/Clauslavie.jpg"
+    }
+  ]
+}
