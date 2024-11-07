@@ -2,14 +2,14 @@
   "name": "alura-geek",
   "version": "1.0.0",
   "description": "Simular un e-commerce",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "json-server --watch db.json --port 3000"
   },
   "author": "Sergio",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "json-server": "^1.0.0-beta.3"
   }
 }
