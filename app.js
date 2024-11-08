@@ -17,7 +17,7 @@ async function showAlert(icon, title, text, showCancel = false) {
 // Función para obtener productos de la API
 async function fetchProducts(category) {
   try {
-    const response = await fetch(`http://localhost:3000/${category}`);
+    const response = await fetch(`https://alura-geek-eta-six.vercel.app/${category}`);  // Cambiado URL a Vercel
     if (!response.ok) throw new Error(`Error ${response.status}: No se pudieron obtener los productos`);
     const products = await response.json();
     renderProducts(products, `${category}-container`);
@@ -83,7 +83,7 @@ function renderFilteredProducts(products, containerId) {
 // Función para centralizar la solicitud DELETE
 async function deleteProduct(category, productId) {
   try {
-    const response = await fetch(`http://localhost:3000/${category}/${productId}`, {
+    const response = await fetch(`https://alura-geek-eta-six.vercel.app/${category}/${productId}`, {  // Cambiado URL a Vercel
       method: 'DELETE',
     });
     if (!response.ok) throw new Error(`Error ${response.status}: No se pudo eliminar el producto`);
@@ -124,7 +124,7 @@ async function addProduct(name, price, image, category) {
   
   if (confirmAdd.isConfirmed) {
     try {
-      const response = await fetch(`http://localhost:3000/${category}`, {
+      const response = await fetch(`https://alura-geek-eta-six.vercel.app/${category}`, {  // Cambiado URL a Vercel
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -153,7 +153,7 @@ async function searchProducts(query) {
   
   for (const category of categories) {
     try {
-      const response = await fetch(`http://localhost:3000/${category}`);
+      const response = await fetch(`https://alura-geek-eta-six.vercel.app/${category}`);  // Cambiado URL a Vercel
       if (!response.ok) throw new Error(`Error ${response.status}: No se pudieron obtener los productos`);
       
       const products = await response.json();
@@ -206,3 +206,4 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchProducts('games');
   fetchProducts('anime');
 });
+
