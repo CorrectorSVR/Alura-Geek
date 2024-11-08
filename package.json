@@ -2,10 +2,10 @@
   "name": "alura-geek",
   "version": "1.0.0",
   "description": "Simular un e-commerce",
-  "main": "server.js",
+  "main": "api/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "json-server --watch db.json --port 3000"
+    "start": "node api/server.js",
+    "dev": "json-server --watch api/db.json --port 3000"
   },
   "author": "Sergio",
   "license": "ISC",

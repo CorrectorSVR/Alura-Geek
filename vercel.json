@@ -3,7 +3,7 @@
   "functions": {
     "api/server.js": {
       "memory": 1024,
-      "includeFiles": "db.json"
+      "includeFiles": "api/db.json"
     }
   },
   "builds": [
@@ -15,10 +15,11 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "api/server.js"
+      "destination": "/api/server.js"
     }
   ]
 }
+
 
 
 
